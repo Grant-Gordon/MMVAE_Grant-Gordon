@@ -7,4 +7,4 @@
 #SBATCH --partition=bigmem
 #SBATCH --mem=1G
 
-scripts/run-command-n-env.sh snakemake --profile workflow/profile/slurm --latency-wait 60 "$@"
+./run-command-n-env.sh snakemake --profile workflow/profile/slurm --latency-wait 60 "$@"
