@@ -1,0 +1,31 @@
+# Experiment Parameters
+root_dir: /mnt/projects/debruinz_project/grant_gordon/MMVAE_Grant-Gordon/experiments
+config_name: firstTestRun-run_0-config.yaml
+experiment_name: 2025-01-30-FirstTestRun
+run_name: run_0
+categories:
+- 'assay'
+- 'cell_type'
+- 'dataset_id'
+- 'dev_stage'
+- 'donor_id'
+# - 'species'
+- 'sex'
+- 'tissue'
+
+merge_keys:
+- z
+
+correlation_data: /mnt/projects/debruinz_project/july2024_census_data/filtered
+expression_log_dir: /mnt/projects/debruinz_project/tony_boos/3m_expressions
+train_command:
+  fit
+  --data configs/data/local_human.yaml
+  --model configs/model/single_modal.yaml
+  --trainer.max_epochs 10
+  --early_stopping.patience 10
+  # --trainer.limit_train_batches 100
+  # --trainer.limit_val_batches 100
+  # --trainer.limit_test_batches 100
+  # --trainer.limit_predict_batches 100
+
