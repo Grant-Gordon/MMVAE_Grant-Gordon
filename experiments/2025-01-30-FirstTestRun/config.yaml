@@ -1,0 +1,13 @@
+# Experiment Parameters
+categories:
+- 'donor_id'
+- 'assay'
+- 'dataset_id'
+- 'cell_type'
+- 'tissue'
+- 'species'
+
+merge_keys:
+- z
+
+correlation_data: /mnt/projects/debruinz_project/july2024_census_data/filtered
