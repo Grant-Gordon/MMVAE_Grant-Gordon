@@ -1,0 +1,30 @@
+# Experiment Parameters
+root_dir: /mnt/projects/debruinz_project/tony_boos/MMVAE/lightning_logs
+config_name: config.yaml
+experiment_name: human_only_mmvae
+run_name: baseline_featureKL_anlAdv_1sw_100ew_2ep5
+categories:
+- 'assay'
+- 'cell_type'
+- 'dataset_id'
+- 'dev_stage'
+- 'donor_id'
+# - 'species'
+- 'sex'
+- 'tissue'
+
+merge_keys:
+- z
+
+correlation_data: /mnt/projects/debruinz_project/july2024_census_data/filtered
+expression_log_dir: /mnt/projects/debruinz_project/tony_boos/3m_expressions
+train_command:
+  fit
+  --data configs/data/local_human.yaml
+  --model configs/model/single_modal.yaml
+  --trainer.max_epochs 10
+  --early_stopping.patience 10
+  # --trainer.limit_train_batches 100
+  # --trainer.limit_val_batches 100
+  # --trainer.limit_test_batches 100
+  # --trainer.limit_predict_batches 100
