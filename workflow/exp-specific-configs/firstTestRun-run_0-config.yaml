@@ -1,7 +1,7 @@
 # Experiment Parameters
 root_dir: /mnt/projects/debruinz_project/grant_gordon/MMVAE_Grant-Gordon/experiments
 config_name: firstTestRun-run_0-config.yaml
-experiment_name: 2025-01-30-FirstTestRun
+experiment_name: 2025-01-30-firstTestRun
 run_name: run_0
 categories:
 - 'assay'
