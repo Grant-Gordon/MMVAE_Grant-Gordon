@@ -20,8 +20,8 @@ correlation_data: /mnt/projects/debruinz_project/july2024_census_data/filtered
 expression_log_dir: /mnt/projects/debruinz_project/tony_boos/3m_expressions
 train_command:
   fit
-  --data configs/data/local.yaml
-  --model configs/model/configV3.yaml
+  --data configs/data/local_human.yaml
+  --model configs/model/single_modal.yaml
   --trainer.max_epochs 10
   --early_stopping.patience 10
   # --trainer.limit_train_batches 100
